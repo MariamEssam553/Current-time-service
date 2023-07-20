@@ -5,12 +5,12 @@
     <title>Current Time</title>
 </head>
 <body>
-    <h2 id="current-time"></h2>
+    <h2 id="currentTime"></h2>
     <script>
             (async() => {
                 const response = await fetch("/current-time");
                 const data = await response.text();
-                document.getElementById("current-time").innerText = data;
+                document.getElementById("currentTime").innerText = data;
             })();
     </script>
 </body>
